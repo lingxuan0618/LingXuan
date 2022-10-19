@@ -6,6 +6,6 @@
 
 @layer base {
   body {
-    @apply dark:bg-black;
+    @apply bg-lightLiner min-h-screen font-bold dark:bg-darkLiner ;
   }
 }
