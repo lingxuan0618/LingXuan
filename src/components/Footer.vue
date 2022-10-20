@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-dark text-mainBlue p-4 dark:bg-slate-100">
+  <div class="bg-darkLiner text-mainBlue p-4 dark:bg-lightLiner">
     <div class="text-mainBlue text-2xl pb-2">
       <a href="https://github.com/lingxuan0618" target="_blank">
         <font-awesome-icon icon="fa-brands fa-github" class="pr-4 hover:text-hoverBlue"/>
@@ -13,7 +13,6 @@
     <p>Copyright © LingXuan</p>
   </div>
 </template>
-齡萱-彭-904b22240
 <script>
 
 export default {

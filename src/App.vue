@@ -1,7 +1,7 @@
 <template>
   <nav class="flex justify-between">
     <div class="flex items-center dark:text-white">
-      <img src="@/assets/img/logo.png" alt="Logo">
+      <img src="@/assets/img/logo.svg" alt="Logo">
       <router-link to="/">關於我</router-link> |
       <router-link to="/about">休閒活動</router-link> |
       <router-link to="/about">志工活動</router-link> |
