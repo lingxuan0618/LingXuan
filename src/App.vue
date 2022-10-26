@@ -20,11 +20,11 @@
       <div class="flex items-center">
         <ThemeMode class="flex md:hidden"/>
         <!-- Mobile menu button -->
-        <div @click="showMenu = !showMenu" @keydown="123" class="flex md:hidden">
-          <button
+        <div class="flex md:hidden">
+          <button @click="showMenu = !showMenu"
             type="button"
-            class="text-white hover:text-gray-400
-            focus:outline-none focus:text-gray-400">
+            class="dark:text-gray-800 text-white hover:text-gray-400
+            focus:outline-none focus:text-gray-400 ml-2">
             <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
               <path fill-rule="evenodd"
                 d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0
@@ -38,7 +38,7 @@
 
     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
     <div class="flex items-center">
-      <ThemeMode class="hidden md:flex pl-4"/>
+      <ThemeMode class="hidden md:flex pl-8"/>
       <ul :class="showMenu ? 'flex' : 'hidden'"
           class="flex-col mt-8 space-y-4
           md:flex md:space-y-0 md:flex-row

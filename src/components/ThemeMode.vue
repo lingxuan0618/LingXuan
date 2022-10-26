@@ -2,15 +2,19 @@
   <div class="md:order-5">
     <button v-if="themeColor === 'light'" id="light"
     :class="{'light': themeColor === 'light'}"
-    class="px-4 py-2 rounded-full bg-white border-gray-400 border-2"
+    class="flex items-center justify-center px-2 py-1 rounded-full
+    bg-lightLiner border-gray-400 border-2 min-w-[80px]"
     @click="changeThemeColor('dark')">
-      {{ $t('theme.light') }} <font-awesome-icon icon="fa-solid fa-sun" class="text-yellow-500"/>
+      <span class="text-xs pr-2">{{ $t('theme.light') }}</span>
+      <font-awesome-icon icon="fa-solid fa-sun" class="text-yellow-500"/>
     </button>
     <button  v-else id="dark"
     :class="{'dark': themeColor === 'dark'}"
-    class="px-4 py-2 rounded-full bg-gray-700 border-gray-700 border-2 text-white"
+    class="flex items-center justify-center px-2 py-1 rounded-full bg-darkLiner border-gray-400
+    border-2 hover:bg-gray-100 min-w-[80px]"
     @click="changeThemeColor('light')">
-      {{ $t('theme.dark') }} <font-awesome-icon icon="fa-solid fa-moon" class="text-yellow-500"/>
+      <span class="text-xs pr-2 text-white">{{ $t('theme.dark') }}</span>
+      <font-awesome-icon icon="fa-solid fa-moon" class="text-yellow-500"/>
     </button>
   </div>
 </template>

@@ -1,7 +1,7 @@
 export default {
   theme: {
-    light: '日間模式',
-    dark: '夜間模式',
+    light: 'Light',
+    dark: 'Dark',
   },
   lang: {
     zh: '中文',
