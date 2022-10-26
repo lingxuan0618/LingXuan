@@ -6,6 +6,6 @@
 
 @layer base {
   body {
-    @apply bg-lightLiner min-h-screen font-bold dark:bg-darkLiner ;
+    @apply bg-no-repeat bg-center bg-lightLiner min-h-screen font-bold dark:bg-darkLiner ;
   }
 }
