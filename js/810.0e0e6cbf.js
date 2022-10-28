@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunklingxuan"]=self["webpackChunklingxuan"]||[]).push([[810],{2810:function(n,r,u){u.r(r),u.d(r,{default:function(){return f}});var t=u(3396);const e={class:"sport"};function s(n,r){return(0,t.wg)(),(0,t.iD)("div",e)}var a=u(89);const c={},i=(0,a.Z)(c,[["render",s]]);var f=i}}]);
+//# sourceMappingURL=810.0e0e6cbf.js.map
