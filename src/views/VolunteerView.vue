@@ -1,4 +1,4 @@
 <template>
-  <div class="about">
+  <div class="volunteer">
   </div>
 </template>

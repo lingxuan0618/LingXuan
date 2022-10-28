@@ -1,4 +1,4 @@
 <template>
-  <div class="about">
+  <div class="sport">
   </div>
 </template>

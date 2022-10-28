@@ -1,4 +1,4 @@
 <template>
-  <div class="about">
+  <div class="university">
   </div>
 </template>

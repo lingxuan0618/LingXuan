@@ -13,8 +13,8 @@
       <ThemeMode />
     </div>
   </nav> -->
-  <nav class="container px-6 py-4 md:flex md:justify-between md:items-center
-  bg-darkLiner dark:bg-lightLiner">
+  <nav class="px-6 py-4 md:flex md:justify-between md:items-center
+  bg-lightLiner dark:bg-darkLiner border-b-2 border-zinc-100 dark:border-gray-700">
     <div class="flex items-center justify-between">
       <img src="@/assets/img/logo.svg" alt="LingXuan Logo" />
       <div class="flex items-center">
@@ -23,7 +23,7 @@
         <div class="flex md:hidden">
           <button @click="showMenu = !showMenu"
             type="button"
-            class="dark:text-gray-800 text-white hover:text-gray-400
+            class="text-gray-800 dark:text-white hover:text-gray-400
             focus:outline-none focus:text-gray-400 ml-2">
             <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
               <path fill-rule="evenodd"
@@ -43,17 +43,27 @@
           class="flex-col mt-8 space-y-4
           md:flex md:space-y-0 md:flex-row
           md:items-center md:space-x-10
-          md:mt-0 mx-auto text-white dark:text-gray-800">
-        <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">關於我</li>
-        <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">休閒活動</li>
-        <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">志工活動</li>
-        <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">大學專題</li>
-        <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">學習歷程</li>
+          md:mt-0 mx-auto text-gray-800 dark:text-white">
+        <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">
+          <router-link to="/about">關於我</router-link>
+        </li>
+        <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">
+          <router-link to="/sport">休閒運動</router-link>
+        </li>
+        <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">
+          <router-link to="/volunteer">志工活動</router-link>
+        </li>
+        <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">
+          <router-link to="/university">大學專題</router-link>
+        </li>
+        <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">
+          <router-link to="/learning">學習歷程</router-link>
+        </li>
       </ul>
     </div>
   </nav>
-  <router-view />
-  <Footer />
+  <router-view class="mb-12"/>
+  <Footer class="border-t-2 border-zinc-100 dark:border-gray-700"/>
 </template>
 
 <script>
