@@ -6,7 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 /* import specific icons */
 import {
-  faSun, faMoon, faLanguage, faBlog,
+  faSun, faMoon, faLanguage, faBlog, faBasketball,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub, faLinkedin,
@@ -18,7 +18,7 @@ import router from './router';
 import store from './store';
 
 /* add icons to the library */
-library.add(faSun, faMoon, faLanguage, faGithub, faLinkedin, faBlog);
+library.add(faSun, faMoon, faLanguage, faGithub, faLinkedin, faBlog, faBasketball);
 const app = createApp(App);
 app.component('font-awesome-icon', FontAwesomeIcon);
 app.use(store);

@@ -1,24 +1,11 @@
 <template>
-  <!-- <nav class="flex justify-between">
-    <div class="flex items-center dark:text-white">
-      <img src="@/assets/img/logo.svg" alt="LingXuan Logo" />
-      <router-link to="/">關於我</router-link> |
-      <router-link to="/about">休閒活動</router-link> |
-      <router-link to="/about">志工活動</router-link> |
-      <router-link to="/about">大學專題</router-link> |
-      <router-link to="/about">學習歷程</router-link>
-    </div>
-    <div>
-      <Language />
-      <ThemeMode />
-    </div>
-  </nav> -->
   <nav class="px-6 py-4 md:flex md:justify-between md:items-center
   bg-lightLiner dark:bg-darkLiner border-b-2 border-zinc-100 dark:border-gray-700">
     <div class="flex items-center justify-between">
-      <img src="@/assets/img/logo.svg" alt="LingXuan Logo" />
+      <router-link to="/about"><img src="@/assets/img/logo.svg" alt="LingXuan Logo" /></router-link>
       <div class="flex items-center">
         <ThemeMode class="flex md:hidden"/>
+        <!-- <Language /> -->
         <!-- Mobile menu button -->
         <div class="flex md:hidden">
           <button @click="showMenu = !showMenu"
@@ -45,10 +32,14 @@
           md:items-center md:space-x-10
           md:mt-0 mx-auto text-gray-800 dark:text-white">
         <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">
-          <router-link to="/about">關於我</router-link>
+          <router-link to="/about">
+            關於我
+          </router-link>
         </li>
         <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">
-          <router-link to="/sport">休閒運動</router-link>
+          <router-link to="/sport">
+            <font-awesome-icon icon="fa-solid fa-basketball" class="pr-2"/>休閒運動
+          </router-link>
         </li>
         <li class="text-sm font-bold hover:text-mainBlue cursor-pointer">
           <router-link to="/volunteer">志工活動</router-link>
@@ -87,24 +78,16 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+// nav {
+//   padding: 30px;
 
-nav {
-  padding: 30px;
+//   a {
+//     // font-weight: bold;
+//     // color: #2c3e50;
 
-  a {
-    // font-weight: bold;
-    // color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #0ea5e9;
-    }
-  }
-}
+//     &.router-link-exact-active {
+//       color: #0ea5e9;
+//     }
+//   }
+// }
 </style>
